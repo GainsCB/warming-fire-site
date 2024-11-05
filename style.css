@@ -1,0 +1,64 @@
+:root {
+  /* colors */
+  --licorice: #230d03ff;
+  --light-yellow: #f6f6d5ff;
+  --smoky-black: #0b0300ff;
+  --bronze: #d07c2bff;
+
+  --yellow-hsla: hsla(60, 65%, 90%, 0.8);
+  --bronze-hsla: hsla(29, 66%, 49%, 0.5);
+  --licorice-hsla: rgba(35, 13, 3, 0.7);
+}
+
+body {
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  font-size: 25px;
+  font-style: normal;
+  margin: 0;
+  text-align: center;
+}
+
+.main {
+  background-image: url(images/fireplace.webp);
+  background-size: cover;
+  border-image: fill 1
+    linear-gradient(var(--bronze-hsla), var(--licorice-hsla));
+  padding: 150px;
+  color: var(--light-yellow);
+}
+
+#logo {
+  font-size: 40px;
+  color: var(--light-yellow);
+}
+
+.main,
+#logo {
+  text-shadow: 2.5px 1.5px 0.5px var(--smoky-black);
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--smoky-black);
+}
+
+button {
+  background-color: var(--light-yellow);
+  font-family: inherit;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 15px 20px;
+}
+
+button:hover {
+  background-color: var(--yellow-hsla);
+}
+
+h3 {
+  font-size: 45px;
+}
